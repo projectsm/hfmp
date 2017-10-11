@@ -1,4 +1,3 @@
-'use strict';
 
 var crypto;
 var async = require('neo-async');

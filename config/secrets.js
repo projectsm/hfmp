@@ -18,7 +18,7 @@
 
  * IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT
  */
-'use strict';
+
 
 module.exports = {
 
@@ -41,7 +41,7 @@ module.exports = {
   },
 
   sendgrid: {
-    api_key: process.env.SENDGRID_APIKEY || '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'
+    api_key: process.env.SENDGRID_APIKEY || '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'
   },
 
   nyt: {
@@ -140,5 +140,6 @@ if(process.env.NODE_ENV === 'test-travis') {
 } else if(process.env.NODE_ENV === 'test') {
   module.exports.postgres = 'postgres://postgres:postgres@127.0.0.1/hfmp';
 } else {
+  // module.exports.postgres = process.env.DATABASE_URL || 'postgres://postgres:postgres@127.0.0.1/hfmp';
   module.exports.postgres = process.env.DATABASE_URL || 'postgres://postgres:postgres@127.0.0.1/hfmp';
 }
