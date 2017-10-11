@@ -41,7 +41,7 @@ module.exports = {
   },
 
   sendgrid: {
-    api_key: process.env.SENDGRID_APIKEY || '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'
+    api_key: process.env.SENDGRID_APIKEY || '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'
   },
 
   nyt: {
