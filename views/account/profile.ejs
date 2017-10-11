@@ -1,5 +1,11 @@
 <% layout('layout') -%>
 
+<style>
+  .text-black{
+    color: black;
+  }
+</style>
+
 <div class="custom-container" ng-controller="UserProfileCtrl" ng-cloak>
   <div class="row">
     <div class="col-sm-6">
@@ -10,7 +16,7 @@
       <form action="/account/profile" method="POST" class="form-horizontal" name="profileForm">
         <input type="hidden" name="_csrf" value="<%= _csrf %>"/>
         <div class="form-group">
-          <label for="email" class="col-sm-4 control-label">Email</label>
+          <label for="email" class="col-sm-4 control-label text-black">Email</label>
           <div class="col-sm-6">
             <input type="email" name="email" id="email" value="<%= user.email %>" class="form-control" required/>
           </div>
