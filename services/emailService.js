@@ -5,7 +5,7 @@ var mailer = require('sendgrid')(secrets.sendgrid.api_key);
 var service = {};
 
 var applicationName = 'Hugpong Federal Movement Philippines';
-var senderAddress = 'HFMP Admin <admin@hfmp.herokuapp.com>';
+var senderAddress = 'HFMP Admin <admin-hfmp@hfmp.herokuapp.com>';
 
 service.sendRequestPasswordEmail = function(email, host, token, done) {
   var mailOptions = {
